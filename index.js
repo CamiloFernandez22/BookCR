@@ -16,6 +16,15 @@ const connect = async () => { //Esta es la funcion que se llamara cuando se cone
   }
 };
 
+//Se hace funcion con mongoose para que nos indique si la conexion con MongoDB se cayo, esto sirve para hacer troubleshoot. 
+mongoose.connection.on("disconnected", ()=>{
+    console.log("mongoDB desconectado")
+})
+
+//Se hace funcion con mongoose para que nos indique si la conexion con MongoDB esta conectada, esto sirve para hacer troubleshoot. 
+mongoose.connection.on("connected", ()=>{
+    console.log("mongoDB conectado")
+})
 
 const app = express()
 dotenv.config()
