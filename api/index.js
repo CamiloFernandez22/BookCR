@@ -1,12 +1,25 @@
 //Aqui se va a crear la aplicacion
+
 //Se van a usar modulos de import y export, para eso se agrego del modulo en el package.json
 import express from "express"
+
 //Se agrega libreria dotenv que sirve para cargar variables del archivo .env 
 import dotenv from "dotenv"
+
 //Se agrega libreria de mongoose para trabajar la base de datos. 
 import mongoose from "mongoose";
-//Se importa el archivo de autenticacion para poder llamarla dentro de index. 
-import authRoute from "./routes/auth,js"
+
+//Se importa el archivo de ruta de autenticacion para poder llamarla dentro de index. 
+import authRoute from "./routes/auth.js"
+
+//Se importa el archivo de ruta de hotels para poder llamarla dentro de index. 
+import hotelsRoute from "./routes/hotels.js"
+
+//Se importa el archivo de ruta de rooms para poder llamarla dentro de index. 
+import roomsRoute from "./routes/rooms.js"
+
+//Se importa el archivo de ruta de users para poder llamarla dentro de index. 
+import usersRoute from "./routes/users.js"
 
 //Aqui se declara la variable de app.
 const app = express()
@@ -37,6 +50,20 @@ mongoose.connection.on("connected", ()=>{
 app.get("/home", (req,res)=>{
   res.send("Hola, este es el primer request!")
 })
+
+//Middlewares
+
+//Este middleware nos sirve para hacer uso de la ruta Auth.
+app.use("/auth", authRoute); 
+
+//Este middleware nos sirve para hacer uso de la ruta hoteles.
+app.use("/hotels", hotelsRoute); 
+
+//Este middleware nos sirve para hacer uso de la ruta Rooms.
+app.use("/rooms", roomsRoute);
+
+//Este middleware nos sirve para hacer uso de la ruta users.
+app.use("/users", usersRoute);
 
 //Vamos a crear la conexion con el puerto de la applicacion, se corre "npm start" en terminal o bash
 app.listen(8800,()=>{

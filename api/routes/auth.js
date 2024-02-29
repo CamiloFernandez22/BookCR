@@ -8,4 +8,8 @@ const router = express.Router();
 router.get("/", (req,res)=>{
     res.send("Este es el endpoint de autenticacion")
 })
+
+router.get("/register", (req,res) =>{
+    res.send("Este es el endpoint de registro")
+})
 export default router
