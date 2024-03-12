@@ -13,3 +13,13 @@ Creating the API references:
 
 - https://expressjs.com/en/guide/using-middleware.html
 
+--------------------------------------------------------------------------
+Creating CRUD operations for mongoDB using Node.JS references:
+
+- https://www.mongodb.com/developer/languages/javascript/node-crud-tutorial/
+- https://cleverzone.medium.com/performing-crud-operations-in-node-js-and-express-js-with-mongodb-4ea71da2100a
+
+Creating Schemas references: 
+
+- https://mongoosejs.com/docs/guide.html
+
