@@ -1,3 +1,4 @@
+// se va a conectar con la BD para crear una coleccion de manera asincrona ya que no se hace inmediatamente. 
 export const createHotel = async (req, res, next) =>{
 
     //Aqui se obtiene la informacion del hotel del usuario.

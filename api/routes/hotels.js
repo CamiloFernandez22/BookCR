@@ -1,28 +1,14 @@
 import express from "express";
+import { createHotel } from "../controllers/hotel.js";
 import Hotel from "../models/Hotel.js";
 /*En esta ruta vamos a crear los hoteles*/
 
 //Aqui se va a instanciar la constante router que usa una funcion de express para aceptar los request del API
 const router = express.Router();
 
-// Fuente para operaciones CRUD: https://cleverzone.medium.com/performing-crud-operations-in-node-js-and-express-js-with-mongodb-4ea71da2100a
-
 //************************************************************************************************************************************** */
-//CREATE, se va a conectar con la BD para crear una coleccion de manera asincrona ya que no se hace inmediatamente. 
-router.post("/", async (req,res)=>{
-
-    //Aqqui se obtiene la informacion del hotel del usuario.
-    const newHotel = new Hotel(req.body) //request es lo que se obtiene del usario.
-                                        //body es donde se va a almacenar la informacion del objeto. 
-
-    //Aqui vamos a manejar cualquier error al hacer la operacion  metodo create
-    try{
-        const savedHotel = await newHotel.save()
-        res.status(200).json(savedHotel)
-    }catch(err){
-        res.status(500).json(err)
-    }
-});
+//CREATE, a travez de la funcion createHotel se va a conectar con la BD para crear una coleccion de manera asincrona ya que no se hace inmediatamente. 
+router.post("/", createHotel);
 
 //************************************************************************************************************************************ */
 //UPDATE se va a crear metodo de actualizar datos 
