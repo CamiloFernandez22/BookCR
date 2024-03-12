@@ -3,6 +3,11 @@ MongoDB user: Camilo
 password: Ulacit123
 
 ----------------------------------------------------------------
+JWT Authentication references:
+-https://dvmhn07.medium.com/jwt-authentication-in-node-js-a-practical-guide-c8ab1b432a49
+
+-https://www.loginradius.com/blog/engineering/guest-post/nodejs-authentication-guide/
+----------------------------------------------------------------
 Proyect structure outline Back-end references:
 
 -https://soonsantos.medium.com/nodejs-api-part-5-model-router-controller-structure-c5b13c2660ae
