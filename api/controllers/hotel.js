@@ -9,6 +9,6 @@ export const createHotel = async (req, res, next) =>{
         const savedHotel = await newHotel.save()
         res.status(200).json(savedHotel)
     }catch(err){
-        next(err);
+        next(err); // Aqui se va a pasar el error a express para ser procesado.
     }
 }
