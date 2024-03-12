@@ -2,6 +2,12 @@
 MongoDB user: Camilo
 password: Ulacit123
 
+----------------------------------------------------------------
+Proyect structure outline Back-end references:
+
+-https://soonsantos.medium.com/nodejs-api-part-5-model-router-controller-structure-c5b13c2660ae
+
+----------------------------------------------------------------
 Mongo connection string: mongodb+srv://Camilo:<password>@bookcr.xgztqr5.mongodb.net/?retryWrites=true&w=majority&appName=BookCR
 
 ------------------------------------------------------------------------
@@ -23,3 +29,7 @@ Creating Schemas references:
 
 - https://mongoosejs.com/docs/guide.html
 
+----------------------------------------------------------------
+Error Handling references:
+
+-https://expressjs.com/en/guide/error-handling.html
