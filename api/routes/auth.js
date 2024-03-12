@@ -5,11 +5,5 @@ solo los usuarios que tengan su token puedan acceder a su endpoint especifico*/
 //Aqui se va a instanciar la constante router que usa una funcion de express para aceptar los request del API
 const router = express.Router();
 
-router.get("/", (req,res)=>{
-    res.send("Este es el endpoint de autenticacion")
-})
-
-router.get("/register", (req,res) =>{
-    res.send("Este es el endpoint de registro")
-})
+router.get("/register", register)
 export default router
