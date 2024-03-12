@@ -14,7 +14,7 @@ export const createHotel = async (req, res, next) =>{
     }
 }
 
-export const createHotel = async (req, res, next) =>{
+export const updateHotel = async (req, res, next) =>{
 
     //Aqui se obtiene la informacion del hotel del usuario.
     const newHotel = new Hotel(req.body) //request es lo que se obtiene del usario.
