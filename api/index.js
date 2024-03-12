@@ -67,6 +67,18 @@ app.use("/rooms", roomsRoute);
 //Este middleware nos sirve para hacer uso de la ruta users.
 app.use("/users", usersRoute);
 
+//Aqui se van manejar los errores para el api request
+app.use((err, req, res, next)=>{
+  const errorStatus = err.status || 500
+  const errorMessage = err.message || "Hubo un error"
+  return res.status(errorStatus).json({
+    success: false,
+    status: errorStatus,
+    message: errorMessage,
+    stack: err.stack,
+  });
+});
+
 //Vamos a crear la conexion con el puerto de la applicacion, se corre "npm start" en terminal o bash
 app.listen(8800,()=>{
     connect(); //aqui se llama la funcion creada en la linea 10-16.

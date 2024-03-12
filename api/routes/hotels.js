@@ -76,7 +76,10 @@ router.get("/:id", async (req,res)=>{
 
 //GET ALL
 
-router.get("/", async (req,res)=>{
+router.get("/", async (req,res, next)=>{
+
+    //const failed = true;
+    //if(failed) return next(err);
 
     //Aqui vamos a manejar cualquier error al hacer la operacion de metodo update
     try{
@@ -84,7 +87,7 @@ router.get("/", async (req,res)=>{
     const hotels = await Hotel.find();
         res.status(200).json(hotels);
     }catch(err){
-        res.status(500).json(err)
+        next(err)
     }
 });
 
