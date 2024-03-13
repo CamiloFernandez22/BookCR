@@ -1,5 +1,5 @@
-import express from "express";
-import { register } from "../controllers/auth.js";
+import express from "express"
+import { register } from "../controllers/auth.js"
 /*En esta ruta vamos a crear la autorizacion y autenticacion para asegurar que 
 solo los usuarios que tengan su token puedan acceder a su endpoint especifico*/
 

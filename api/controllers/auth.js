@@ -1,5 +1,6 @@
 //Aqui se va a crear la funcion para el rigistro de usuarios 
 import User from "../models/User.js"
+
 export const register = async (req,res,next)=>{
     try{
         const newUser = new User({
@@ -9,9 +10,9 @@ export const register = async (req,res,next)=>{
         })
 
         //Si la informacion es valida entonces vamos a implementar la siguiente funcion que devuelve status de creado
-        await newUser.save()
-        res.status(201).send("User created.")
+        await newUser.save();
+        res.status(200).send("User created.");
     }catch(err){
-        next(err)
+        next(err);
     }
-}
+};
