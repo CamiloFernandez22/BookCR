@@ -11,6 +11,9 @@ JWT Authentication references:
 
 -https://www.loginradius.com/blog/engineering/guest-post/nodejs-authentication-guide/
 ----------------------------------------------------------------
+Encrypting password references:
+-https://www.npmjs.com/package/bcryptjs
+----------------------------------------------------------------
 Proyect structure outline Back-end references:
 
 -https://soonsantos.medium.com/nodejs-api-part-5-model-router-controller-structure-c5b13c2660ae
