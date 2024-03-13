@@ -7,5 +7,5 @@ solo los usuarios que tengan su token puedan acceder a su endpoint especifico*/
 const router = express.Router();
 
 //Aqui tenemos una ruta que va a indicar que se quiere crear un usuario
-router.get("/register", register)
+router.post("/register", register)
 export default router
