@@ -1,6 +1,9 @@
-//Aqui se va a crear la funcion para el rigistro de usuarios 
+//Aqui se va a crear las funciones de autenticacion para la aplicacion web. 
 import User from "../models/User.js"
 import bcrypt from "bcryptjs"
+import { createError } from "../Utils/error.js";
+
+//Aqui se va a crear la funcion para el rigistro de usuarios 
 export const register = async (req,res,next)=>{
     try{
 
@@ -20,5 +23,26 @@ export const register = async (req,res,next)=>{
     }catch(err){
         next(err);
     }
+}
+    export const login = async (req,res,next)=>{
+        try{
+            //Se va a crear una funcion para buscar a un usuario 
+            const user = await User.findOne({username: req.body.username})
+
+            //Aqui se va a crear un error que nos indique si el usuario que estamos buscando en la BD no existe
+            if(!user) return next(createError(404, "User not found"))
+
+            //Aqui usando una funcion asincrona lo que se va a hacer es verificar que la contrasenna coinicda con el hash creado con bcryptjs.
+            const passwordVerification = await bcrypt.compare(req.body.password, user.password)
+
+            //Aqui se va a crear un error que permita indicar que la contrasenna es incorrecta
+            if(!passwordVerification) return next(createError(400, "The password or username is incorrect"))
+
+            const {password, isAdmin, ...otherDetails} = user._doc;
+            //Si todo sale bien entonces el usuario se despliega en el request. 
+            res.status(200).json({...otherDetails});
+        }catch(err){
+            next(err);
+        }
     
 };
