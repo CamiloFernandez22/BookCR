@@ -2,6 +2,17 @@
 MongoDB user: Camilo
 password: Ulacit123
 
+
+Troubleshooting:
+En caso de encontrar este error => <EADDRINUSE, Address already in use> al correr el servidor npm utilizar este codigo para terminar procesos que esten utilizando el mismo puerto => <sudo lsof -i :8800> para encontrar el PID y luego => <kill -9 <PID>> para terminarlo y poder usar el puerto de nuevo. 
+----------------------------------------------------------------
+JWT Authentication references:
+-https://dvmhn07.medium.com/jwt-authentication-in-node-js-a-practical-guide-c8ab1b432a49
+
+-https://www.loginradius.com/blog/engineering/guest-post/nodejs-authentication-guide/
+----------------------------------------------------------------
+Encrypting password references:
+-https://www.npmjs.com/package/bcryptjs
 ----------------------------------------------------------------
 Proyect structure outline Back-end references:
 
