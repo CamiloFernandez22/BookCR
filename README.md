@@ -45,3 +45,8 @@ Error Handling references:
 
 -https://expressjs.com/en/guide/error-handling.html
 -https://www.linkedin.com/advice/3/what-best-practices-error-handling-nodejs-skills-web-development
+
+-----------------------------------------------------------------
+NodeJs Function support references:
+
+-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
