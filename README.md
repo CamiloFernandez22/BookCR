@@ -50,3 +50,8 @@ Error Handling references:
 NodeJs Function support references:
 
 -https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+
+-----------------------------------------------------------------
+JWT Auth References:
+
+-https://jwt.io/introduction
