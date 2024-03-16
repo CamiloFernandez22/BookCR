@@ -55,3 +55,7 @@ NodeJs Function support references:
 JWT Auth References:
 
 -https://jwt.io/introduction
+
+httpOnly cookie JWT reference:
+
+-https://keeplearning.dev/nodejs-jwt-authentication-with-http-only-cookie-5d8a966ac059

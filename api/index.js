@@ -21,6 +21,9 @@ import roomsRoute from "./routes/rooms.js";
 //Se importa el archivo de ruta de users para poder llamarla dentro de index. 
 import usersRoute from "./routes/users.js";
 
+//Se importa funcion de cookieParser para crear las cookies 
+import cookieParser from "cookie-parser";
+
 //Aqui se declara la variable de app.
 const app = express();
 dotenv.config();
@@ -54,6 +57,8 @@ app.get("/", (req,res)=>{
 //Middlewares
 
 app.use(express.json());
+
+app.use(cookieParser());
 
 //Este middleware nos sirve para hacer uso de la ruta Auth.
 app.use("/auth", authRoute); 
