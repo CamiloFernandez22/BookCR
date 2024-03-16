@@ -58,7 +58,7 @@ app.get("/", (req,res)=>{
 
 app.use(express.json());
 
-app.use(cookieParser());
+app.use(cookieParser()); //Se va a simplificar y centralizar el manejo de cookies, ver referencia en readme. 
 
 //Este middleware nos sirve para hacer uso de la ruta Auth.
 app.use("/auth", authRoute); 

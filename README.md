@@ -59,3 +59,9 @@ JWT Auth References:
 httpOnly cookie JWT reference:
 
 -https://keeplearning.dev/nodejs-jwt-authentication-with-http-only-cookie-5d8a966ac059
+
+CookieParser and secret references: 
+
+-https://expressjs.com/en/resources/middleware/cookie-parser.html
+
+-https://www.geeksforgeeks.org/what-is-the-purpose-of-the-cookie-parser-middleware-in-express-js/
