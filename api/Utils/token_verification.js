@@ -26,7 +26,7 @@ export const token_verification = (req, res, next) =>{
 //Se va a verificar al usuario
 export const verifyUser = (req, res, next) =>{
 //Se llama al middleware de Token_verfication para verficar si esta autentificado
-token_verification(req,res, ()=>{
+token_verification(req,res, next,()=>{
     //Si el usuario que manda la soliciutd es igual al id autorizado o si el usuario es admin entonces se valida y se pasa al siguiente argumento
     if(req.user.id === req.params.id || req.user.isAdmin){
         next();
@@ -40,7 +40,7 @@ token_verification(req,res, ()=>{
 //Se va a verificar que el usuario sea admin
 export const verifyAdmin = (req, res, next) =>{
     //Se llama al middleware de Token_verfication para verficar si esta autentificado
-    token_verification(req,res, ()=>{
+    token_verification(req,res, next,()=>{
         //Si el usuario que manda la soliciutd es igual al id de admin entonces se valida y se pasa al siguiente argumento
         if(req.user.isAdmin){
             next();

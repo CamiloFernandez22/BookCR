@@ -8,7 +8,7 @@ const router = express.Router();
 
 //Cuando se usa el endpoint de verificar auth se usa el middleware de token_verification para validar el token obtenido de los cookies
 //si la verificacion del token es exitosa entonces se obtiene el acceso como usuario.
-router.get("/checkauth", token_verification,(req,res,next)=>{
+/*router.get("/checkauth", token_verification,(req,res,next)=>{
     res.send("Hello user, authentication successful")
 })
 
@@ -19,28 +19,30 @@ router.get("/checkuser/:id", verifyUser ,(req,res,next)=>{
 router.get("/checkadmin/:id", verifyAdmin ,(req,res,next)=>{
     res.send("Hello admin, authentication successful, you can delete any account")
 })
+*/
+
 //************************************************************************************************************************************ */
 //UPDATE se va a crear metodo de actualizar datos 
 
-router.put("/:id", updateUser);
+router.put("/:id", verifyUser, updateUser);
 
 //************************************************************************************************************************************ */
 
 //DELETE
 
-router.delete("/:id", deleteUser);
+router.delete("/:id", verifyUser, deleteUser);
 
 //************************************************************************************************************************************ */
 
 //GET
 
-router.get("/:id", getUser);
+router.get("/:id", verifyUser, getUser);
 
 //************************************************************************************************************************************ */
 
 //GET ALL
 
-router.get("/", getUsers);
+router.get("/", verifyAdmin, getUsers);
 
 export default router
 
