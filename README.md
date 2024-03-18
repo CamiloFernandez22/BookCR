@@ -65,3 +65,6 @@ CookieParser and secret references:
 -https://expressjs.com/en/resources/middleware/cookie-parser.html
 
 -https://www.geeksforgeeks.org/what-is-the-purpose-of-the-cookie-parser-middleware-in-express-js/
+
+JWT Role Based Authorization References:
+-https://medium.com/gen-y/custom-role-based-auth-mechanism-for-nodejs-d40e5efdd140
