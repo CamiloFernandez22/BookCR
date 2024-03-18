@@ -42,7 +42,7 @@ export const verifyAdmin = (req, res, next) =>{
     //Se llama al middleware de Token_verfication para verficar si esta autentificado
     token_verification(req,res, ()=>{
         //Si el usuario que manda la soliciutd es igual al id de admin entonces se valida y se pasa al siguiente argumento
-        if(req.user.id === req.params.id || req.user.isAdmin){
+        if(req.user.isAdmin){
             next();
         }else{
             //al no verificarse se crea este error que indica que no hay autorizacion
