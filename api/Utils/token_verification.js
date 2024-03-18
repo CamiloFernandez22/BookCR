@@ -1,3 +1,4 @@
+//Se crea este middleware para verificar si el token proporcionado por medio los cookies es valido o si tan si quiera existe un token. 
 import jwt from "jsonwebtoken";
 import {createError} from "../utils/error.js"
 
