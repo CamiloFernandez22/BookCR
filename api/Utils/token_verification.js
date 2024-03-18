@@ -22,3 +22,17 @@ export const token_verification = (req, res, next) =>{
 
     });
 };
+
+//Se va a verificar al usuario
+export const verifyUser = (req, res, next) =>{
+//Se llama al middleware de Token_verfication para verficar si esta autentificado
+token_verification(req,res, ()=>{
+    //Si el usuario que manda la soliciutd es igual al id autorizado o si el usuario es admin entonces se valida y se pasa al siguiente argumento
+    if(req.user.id === req.params.id || req.user.isAdmin){
+        next();
+    }else{
+        //al no verificarse se crea este error que indica que no hay autorizacion
+       return next(createError(403, "Authorization not granted"));
+    }
+});
+}
