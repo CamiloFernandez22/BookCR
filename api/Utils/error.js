@@ -1,4 +1,4 @@
-//Aqui se va a crear una funcion que permita desplegar los detalles de un error
+//Aqui se va a crear una funcion que permita crear un error con los detalles del mismo.
 export const createError = (status, message)=>{
     const err = new Error(); 
     err.status = status;

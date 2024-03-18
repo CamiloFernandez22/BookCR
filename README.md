@@ -50,3 +50,21 @@ Error Handling references:
 NodeJs Function support references:
 
 -https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+
+-----------------------------------------------------------------
+JWT Auth References:
+
+-https://jwt.io/introduction
+
+httpOnly cookie JWT reference:
+
+-https://keeplearning.dev/nodejs-jwt-authentication-with-http-only-cookie-5d8a966ac059
+
+CookieParser and secret references: 
+
+-https://expressjs.com/en/resources/middleware/cookie-parser.html
+
+-https://www.geeksforgeeks.org/what-is-the-purpose-of-the-cookie-parser-middleware-in-express-js/
+
+JWT Role Based Authorization References:
+-https://dev.to/franciscomendes10866/using-cookies-with-jwt-in-node-js-8fn
