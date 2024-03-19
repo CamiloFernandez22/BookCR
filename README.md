@@ -55,6 +55,13 @@ NodeJs Function support references:
 
 -https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 
+Params objects:
+
+-https://www.educative.io/answers/what-is-reqparams-in-expressjs
+
+Request objects:
+-https://visheshism.medium.com/simplifying-data-input-in-express-an-overview-of-req-params-req-query-and-req-body-179ab07b2256#:~:text=body%3A-,The%20req.,Example%3A%20POST%20%2Fusers
+
 -----------------------------------------------------------------
 JWT Auth References:
 
