@@ -1,6 +1,7 @@
 import express from "express";
 import { verifyAdmin } from "../Utils/token_verification.js";
 import { createRoom, updateRoom, deleteRoom, getRoom, getRooms } from "../controllers/room.js";
+
 /*En esta ruta vamos a crear los Rooms*/
 
 //Aqui se va a instanciar la constante router que usa una funcion de express para aceptar los request del API
@@ -21,7 +22,7 @@ router.put("/:id", verifyAdmin, updateRoom);
 
 //DELETE
 
-router.delete("/:id", verifyAdmin,deleteRoom);
+router.delete("/:id/:hotelid", verifyAdmin,deleteRoom);
 
 //************************************************************************************************************************************ */
 

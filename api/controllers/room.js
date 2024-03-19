@@ -46,11 +46,18 @@ export const updateRoom = async (req, res, next) =>{
 }   
 
 export const deleteRoom = async (req, res, next) =>{
-
+    const hotelId = req.params.hotelid;
    //Aqui vamos a manejar cualquier error al hacer la operacion de metodo update
    try{
     //Aqui estamos buscando la habitacion por el numero de ID, para luego borrarla.
     await Room.findByIdAndDelete(req.params.id);
+    try{
+        await Hotel.findByIdAndUpdate(hotelId,{
+            $pull: { rooms: req.params.id}, //Aqui se usa el metodo push de MongoDB para agregar el nuevo item de savedRoom en el array de la coleccion.
+        });
+    }catch(err){
+        next(err)
+    }
     res.status(200).json("Room deleted.")
     }catch(err){
     next(err);
