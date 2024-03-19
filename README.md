@@ -46,6 +46,10 @@ Error Handling references:
 -https://expressjs.com/en/guide/error-handling.html
 -https://www.linkedin.com/advice/3/what-best-practices-error-handling-nodejs-skills-web-development
 
+Custom error handling middleware:
+
+-https://sabinadams.hashnode.dev/building-a-custom-nodeexpress-error-handling-middleware
+
 -----------------------------------------------------------------
 NodeJs Function support references:
 
