@@ -9,11 +9,21 @@ export const createRoom = async (req,res,next) =>{
     //Vamos a pedir el id del hotel por medio de la sigueinte objeto req.params.
     const hotelId = req.params.hotelid;
 
-    //Aqui vamos a crear una nueva instancia de habitacion donde tengamos el body del modelo y el id del hotel.
+    //Aqui vamos a crear una nueva instancia de habitacion donde tengamos el body con la informacion del room.
     const newRoom = new Room(req.body)
 
     try{
+        //En primera instancia se va a salvar la habitacion por medio de la sigueinte funcion
+        const savedRoom = await newRoom.save()
 
+        //Se va a realizar otro try/catch ya que se va a actualizar el hotel 
+        try{
+            await Hotel.findByIdAndUpdate(hotelId,{
+                $push: { rooms: savedRoom._id}, //Aqui se usa el metodo push de MongoDB para agregar el nuevo item de savedRoom en el array de la coleccion.
+            });
+        }catch(err){
+            next(err)
+        }
     }catch(err){
         next(err)
     }

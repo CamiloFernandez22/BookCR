@@ -84,3 +84,15 @@ CookieParser and secret references:
 
 JWT Role Based Authorization References:
 -https://dev.to/franciscomendes10866/using-cookies-with-jwt-in-node-js-8fn
+
+-----------------------------------------------------------------
+HTTP Methods References:
+
+-https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+
+------------------------------------------------------------------
+MongoDB Methods References:
+
+-https://www.mongodb.com/docs/manual/reference/method/
+
+-https://www.mongodb.com/docs/manual/reference/operator/aggregation/#std-label-aggregation-expressions
