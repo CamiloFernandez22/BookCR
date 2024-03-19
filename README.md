@@ -5,6 +5,11 @@ password: Ulacit123
 
 Troubleshooting:
 En caso de encontrar este error => <EADDRINUSE, Address already in use> al correr el servidor npm utilizar este codigo para terminar procesos que esten utilizando el mismo puerto => <sudo lsof -i :8800> para encontrar el PID y luego => <kill -9 <PID>> para terminarlo y poder usar el puerto de nuevo. 
+---------------------------------------------------------------
+
+MERN Stack Best Practices And Mapping Reference:
+
+-https://masterlwa.medium.com/structuring-your-mern-stack-project-best-practices-and-organization-5776861e2c92
 ----------------------------------------------------------------
 JWT Authentication references:
 -https://dvmhn07.medium.com/jwt-authentication-in-node-js-a-practical-guide-c8ab1b432a49
