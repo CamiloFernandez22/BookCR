@@ -55,6 +55,9 @@ NodeJs Function support references:
 
 -https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 
+-----------------------------------------------------------------
+Express data managment references: 
+
 -https://www.digitalocean.com/community/tutorials/nodejs-req-object-in-expressjs
 
 Params objects:
