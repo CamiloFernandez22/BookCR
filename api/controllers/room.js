@@ -6,7 +6,7 @@ import {createError} from "../utils/error.js";
 //Se va a crear una funcion asincrona para crear habitacion 
 export const createRoom = async (req,res,next) =>{
 
-    //Vamos a pedir el id del hotel por medio de la sigueinte funcion
+    //Vamos a pedir el id del hotel por medio de la sigueinte objeto req.params.
     const hotelId = req.params.hotelid;
 
     //Aqui vamos a crear una nueva instancia de habitacion donde tengamos el body del modelo y el id del hotel.

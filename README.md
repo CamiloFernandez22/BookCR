@@ -55,6 +55,8 @@ NodeJs Function support references:
 
 -https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 
+-https://www.digitalocean.com/community/tutorials/nodejs-req-object-in-expressjs
+
 Params objects:
 
 -https://www.educative.io/answers/what-is-reqparams-in-expressjs
