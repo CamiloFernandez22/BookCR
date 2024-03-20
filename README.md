@@ -117,3 +117,10 @@ Getting Started With React References:
 -https://www.lucentinnovation.com/blogs/it-insights/react-js-best-practices-2024-essential-techniques-for-modern-web-development
 
 ----------------------------------------------------------------------------
+React Router References:
+-https://www.w3schools.com/react/react_router.asp
+
+-----------------------------------------------------------
+React Components References:
+
+-https://www.educba.com/react-list-components/
