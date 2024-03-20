@@ -2,6 +2,7 @@
 MongoDB user: Camilo
 password: Ulacit123
 
+<H1> Back End References <h1>
 
 Troubleshooting:
 En caso de encontrar este error => <EADDRINUSE, Address already in use> al correr el servidor npm utilizar este codigo para terminar procesos que esten utilizando el mismo puerto => <sudo lsof -i :8800> para encontrar el PID y luego => <kill -9 <PID>> para terminarlo y poder usar el puerto de nuevo. 
@@ -101,3 +102,18 @@ MongoDB Methods References:
 -https://www.mongodb.com/docs/manual/reference/method/
 
 -https://www.mongodb.com/docs/manual/reference/operator/aggregation/#std-label-aggregation-expressions
+
+
+--------------------------------------------------------------------------
+**************************************************************************
+--------------------------------------------------------------------------
+
+<H1>Front End References <h1>
+
+Getting Started With React References:
+
+-https://www.codecademy.com/article/how-to-create-a-react-app
+
+-https://www.lucentinnovation.com/blogs/it-insights/react-js-best-practices-2024-essential-techniques-for-modern-web-development
+
+----------------------------------------------------------------------------
