@@ -116,7 +116,14 @@ Getting Started With React References:
 
 -https://www.lucentinnovation.com/blogs/it-insights/react-js-best-practices-2024-essential-techniques-for-modern-web-development
 
-----------------------------------------------------------------------------
+----------------------------------------------------------------------
+React Front End Estructure References:
+
+-https://blog.webdevsimplified.com/2022-07/react-folder-structure/
+
+-https://www.xenonstack.com/insights/reactjs-project-structure
+
+----------------------------------------------------------------------
 React Router References:
 -https://www.w3schools.com/react/react_router.asp
 
