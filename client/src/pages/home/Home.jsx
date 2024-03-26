@@ -3,7 +3,7 @@ import "./home.css"
 
 const Home = () => {
     return (
-        <div className="navbar">
+        <div>
             <Navbar/>
         </div>
     )
