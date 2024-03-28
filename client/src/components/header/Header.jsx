@@ -7,8 +7,10 @@ const Header = () => {
     return (
         //Se agregan los elementos visuales del header que van a direccionar al usuario a su respectiva pagina
         <div className="header">
+            <div className="headerContainer">
+
             <div className="headerList">
-                <div className="headerListItem">
+                <div className="headerListItem active">
                 <FontAwesomeIcon icon={faBed} />
                 <span>Stays</span>
                 </div>
@@ -32,9 +34,18 @@ const Header = () => {
                 <FontAwesomeIcon icon={faPlaneDeparture} />
                 <span>Airport Taxi</span>
                 </div>
-
             </div>
+            <h1 className="headerTitle">
+            Find your next stay
+            </h1>
+            <p className="headerDescription">
+            Search deals on hotels, homes, and much more...
+            </p>
+            <button className="headerBtn">
+                Sign-in or Register
+            </button>
         </div>
+    </div>
     )
 } 
 export default Header
