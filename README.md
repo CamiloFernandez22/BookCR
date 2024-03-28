@@ -142,3 +142,17 @@ CSS Best Practices References:
 Color Palette Reference:
 
 -https://www.pinterest.com/pin/costa-rican-beach-color-palette--23503229295037746/
+
+----------------------------------------------------------------------
+Webpage Icons References: 
+
+-https://www.w3schools.com/icons/fontawesome_icons_intro.asp
+
+-https://fontawesome.com/
+
+-https://docs.fontawesome.com/web/use-with/react/
+
+----------------------------------------------------------------------
+Color Finder References:
+
+-https://www.colorzilla.com/
