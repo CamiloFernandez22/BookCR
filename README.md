@@ -131,3 +131,14 @@ React Router References:
 React Components References:
 
 -https://www.educba.com/react-list-components/
+
+----------------------------------------------------------------------
+CSS Best Practices References:
+
+-https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing
+
+-https://www.linkedin.com/advice/1/how-can-you-choose-between-css-framework-building-your-4gspf#:~:text=Use%20a%20CSS%20framework%20if,over%20the%20design%20and%20codebase.
+
+Color Palette Reference:
+
+-https://www.pinterest.com/pin/costa-rican-beach-color-palette--23503229295037746/
