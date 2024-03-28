@@ -151,3 +151,8 @@ Webpage Icons References:
 -https://fontawesome.com/
 
 -https://docs.fontawesome.com/web/use-with/react/
+
+----------------------------------------------------------------------
+Color Finder References:
+
+-https://www.colorzilla.com/
