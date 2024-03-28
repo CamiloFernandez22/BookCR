@@ -149,3 +149,5 @@ Webpage Icons References:
 -https://www.w3schools.com/icons/fontawesome_icons_intro.asp
 
 -https://fontawesome.com/
+
+-https://docs.fontawesome.com/web/use-with/react/
